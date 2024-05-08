@@ -1,0 +1,165 @@
+#linha-quarta2{
+    width: 100%;
+    height: 2px;
+    background-color: #EE6E6E;
+    margin-top: 350px;
+}
+
+.colunaconsulta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px 60px 20px;
+    border:2px solid #F0C9C9;
+    border-radius: 20px;
+
+}
+
+.colunaconsulta2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    padding: 20px 60px 20px;
+    border:2px solid #F0C9C9;
+    border-radius: 20px;
+
+}
+
+.colunaconsulta .detalhe{
+    font-size: 30px;
+    font-family: poppinslight;
+}
+
+.colunaconsulta .compareceu{
+    width: 150px;
+    text-align: center;
+    background-color: #EE6E6E;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.colunaconsulta .agendada{
+    width: 150px;
+    text-align: center;
+    background-color: #F0C9C9;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+.colunaconsulta2 .detalhe{
+    font-size: 30px;
+    font-family: poppinslight;
+}
+
+.colunaconsulta2 .compareceu{
+    width: 150px;
+    text-align: center;
+    background-color: #EE6E6E;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.colunaconsulta2 .agendada{
+    width: 150px;
+    text-align: center;
+    background-color: #F0C9C9;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.titulo-minhasconsultas{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.colunaconsulta img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.colunaconsulta2 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#linha-quarta{
+    width: 100%;
+    height: 2px;
+    background-color: #EE6E6E;
+    margin-top: 40px;
+}
+
+#linha-quinta2{
+    width: 100%;
+    height: 2px;
+    background-color: #EE6E6E;
+    margin-top: 2px;
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: 800px;
+}
+
+.textos .detalhe2{
+    font-family: poppinslight;
+    font-size: 30px;
+}
+
+.textos .datahora{
+    font-family: poppinslight;
+    font-size: 30px;   
+}
+
+.textos .motivo{
+    font-family: poppinslight;
+    line-height: 30px;
+
+}
+
+@media screen and (max-width: 1170px){
+    .colunaconsulta2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .colunaconsulta{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        line-height: 40px;
+    }
+
+    .textos{
+        width: 100%;
+        line-height: 40px;
+    }
+
+    #linha-quarta2{
+        margin-top: 20px;
+    }
+}

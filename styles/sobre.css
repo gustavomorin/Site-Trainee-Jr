@@ -1,0 +1,55 @@
+#sobre{
+    position: relative;
+}
+
+#sobre h2{
+    position: absolute;
+    top: 250px;
+    font-size: 40px;
+}
+
+#sobre p{
+    display: flex;
+    justify-content: baseline;
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: 120px;
+    font-family: poppinslight;
+}
+
+#sobre .doutores{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+#sobre .doutores h3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: poppinslight;
+    margin-top: 20px;
+}
+
+#linha{
+    width: 100%;
+    height: 2px;
+    background-color: #EE6E6E;
+    margin-top: 175px;
+}
+
+#linha2{
+    width: 100%;
+    height: 2px;
+    background-color: #EE6E6E;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 1170px){
+    #sobre .doutores{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+

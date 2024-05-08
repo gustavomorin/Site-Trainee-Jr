@@ -1,0 +1,194 @@
+#calendario{
+  margin-top: 80px;
+}
+
+#calendario #linha-calendario{
+    width: 100%;
+    height: 2px;
+    background-color: #EE6E6E;
+    margin-top: 200px;
+    
+}
+
+#calendario #linha-calendario2{
+    width: 100%;
+    height: 2px;
+    background-color: #EE6E6E;
+    margin-top: 70px;
+    
+}
+
+#calendario h2{
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.wrapper{
+  width: 450px;
+  background: #F0C9C9;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  justify-content: center; 
+  margin: 100px auto; /* Define a margem superior e inferior como 100px e a margem horizontal como automática */
+  text-align: center; /* Adiciona alinhamento ao centro para o conteúdo dentro do wrapper */
+  justify-content: center; 
+}
+.wrapper header{
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+header .icons{
+  display: flex;
+}
+
+header .icons span{
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child{
+  margin-right: -10px;
+}
+header .icons span:hover{
+  background: #f2f2f2;
+}
+header .current-date{
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+.calendar{
+  padding: 20px;
+}
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar .days{
+  margin-bottom: 20px;
+}
+.calendar li{
+  color: white;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+.calendar .weeks li{
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.days li.inactive{
+  color: #aaa;
+}
+.days li.active{
+  color: #fff;
+}
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before{
+  background: #EE6E6E;
+}
+.days li:not(.active):hover::before{
+  background: #f2f2f2;
+}
+
+#calendario .confirmar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: -50px; /* Adicione margem superior para afastá-lo do calendário */
+}
+
+#calendario .confirmar a{
+  text-decoration: none;
+}
+
+.select-menu-calendario{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.select-menu-calendario .dropdown {
+  display: flex;
+  justify-content: space-between;
+  background-color: #EE6E6E;
+  width: 400px;
+  padding: 15px;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.select-menu-calendario .options{
+  position: relative;
+  padding: 20px;
+  background: #EE6E6E;
+  color: white;
+  border-radius: 8px;
+  margin-top: 10px;
+  width: 400px;
+  list-style-type: none;
+  padding: 15px;
+  display: none;
+  margin-bottom: 20px;
+}
+
+
+
+.select-menu-calendario.active .dropdown i{
+  transform: rotate(-180deg);
+}
+
+
+
+.select-menu-calendario.active .options{
+  display: block;
+}
+
+.select-menu-calendario .options .option:hover{
+  background: #F0C9C9;
+}
+
+@media screen and (max-width: 1170px){
+    .wrapper{
+        width: 350px;
+    }
+
+    .select-menu-calendario .dropdown{
+      width: 90%;
+
+    }
+
+    .select-menu-calendario .options{
+      width: 90%;
+    }
+}

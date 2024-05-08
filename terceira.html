@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href='styles/hometerceira.css'>
+    <link rel="stylesheet" href="styles/calendario.css">
+    <link rel="stylesheet" href="styles/motivoconsulta.css">
+    <link rel="stylesheet" href="styles/agendar.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script2.js"></script>
+    <title>Clínica</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-house-chimney-medical" id="nav_logo">Clinica</i>
+            <ul id="nav_list">
+                <li class="nav-item">
+                    <a href="segunda.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="segunda.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="segunda.html">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="segunda.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="segunda.html">Contato</a>
+                </li>
+            </ul>
+            <p class="maria"><a href="index.html">Maria Silva</a></p>
+        </nav>
+    </header>
+
+    <!--<script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>-->
+
+
+    <main id="content">
+        <section id="home">
+            <div class="shape-terceira"></div>
+            <div id="cta-terceira">
+                <h1 class="title">Olá, Maria!</h1>
+                <p class="description">Escolha o tipo de atendimento que você precisa e o médico com quem quer realizá-lo</p>
+                <div class="select-menu">
+                    <div class="dropdown">
+                        <span class="sBtn-text">Procedimento</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </div>
+
+                    <ul class="options">
+                        <li class="option">
+                            Preenhimento Facial
+                        </li>
+                        <li class="option">
+                            Rejuvenescimento
+                        </li>
+                        <li class="option">
+                            Botox
+                        </li>
+                    </ul>
+                    
+                </div>
+
+                <div class="select-menu">
+                    <div class="dropdown">
+                        <span class="sBtn-text">Médicos</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </div>
+
+                    <ul class="options">
+                        <li class="option">
+                            Doutor Carlos
+                        </li>
+                        <li class="option">
+                            Doutora Tânia
+                        </li>
+                        <li class="option">
+                            Doutora Sofia
+                        </li>
+                    </ul>
+                    
+                </div>
+
+            </div>
+            <div id="banner-terceira">
+                <img src="components\images\Imagem-mulher.png" alt="mulher">
+            </div>
+        </section>
+
+        <section id="calendario">
+            <div id="linha-calendario"></div>
+            <h2 class="title-calendario">Escolha a Data</h2>
+            <div class="wrapper">
+                <header>
+                  <p class="current-date">Abril 2024</p>
+                  <div class="icons">
+                    <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                    <span id="next" class="material-symbols-rounded">chevron_right</span>
+                  </div>
+                </header>
+                <div class="calendar">
+                  <ul class="weeks">
+                    <li>Seg</li>
+                    <li>Ter</li>
+                    <li>Qua</li>
+                    <li>Qui</li>
+                    <li>Sex</li>
+                    <li>Sab</li>
+                    <li>Dom</li>
+                  </ul>
+                  <ul class="days">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                  </ul>
+                </div>
+                <div class="select-menu-calendario">
+                    <div class="dropdown">
+                        <span class="sBtn-text">Horários</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </div>
+
+                    <ul class="options">
+                        <li class="option">
+                            08h00-09h00
+                        </li>
+                        <li class="option">
+                            09h00-10h00
+                        </li>
+                        <li class="option">
+                            10h00-11h00
+                        </li>
+                        <li class="option">
+                            11h00-12h00
+                        </li>
+                        <li class="option">
+                            13h00-14h00
+                        </li>
+                        <li class="option">
+                            14h00-15h00
+                        </li>
+                        <li class="option">
+                            15h00-16h00
+                        </li>
+                        <li class="option">
+                            16h00-17h00
+                        </li>
+                        <li class="option">
+                            17h00-18h00
+                        </li>
+                        <li class="option">
+                            18h00-19h00
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="confirmar">
+                <a href="#motivoconsulta" class="btn-default">Confirmar</a>
+            </div>
+            <div id="linha-calendario2"></div>
+        </section>
+
+        <section id="motivoconsulta">
+            <h2 class="title-motivo">Motivo Da Consulta</h2>
+            <p class="paragrafo-motivo">Insira aqui o porquê da sua consulta conosco:</p>
+            <textarea id="motivoconsulta" placeholder="Digite Aqui"></textarea>
+            <div id="linha-motivoconsulta"></div>
+        </section>
+
+        <section id="consulta">
+            <div class="blocogrande">
+                <h3 class="agendar">Minhas Consultas</h3>
+
+                <a href="quarta.html" class="btn-default">Confirmar</a>
+            </div>
+            <div id="linha-agendar"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>
+                    <i class="fa-solid fa-house-chimney-medical" id="nav_logo">Clinica</i>
+                </h1>
+                <p>Transformando cada pele em sua</p>
+                <p>melhor versão. Sua jornada para uma</p>
+                <p>pele saúdavel começa conosco.</p>
+                <p class="endereco">Rua Aleixo Garcia, 75</p>
+                <p class="socialmedia">Nos siga nas redes sociais</p>
+                <div id="footer_social_media">
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="x">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="pinterest">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Sobre Nós</h3>
+                </li>
+                <li>
+                    <a href="" class="footer-link">História</a>
+                </li>
+                <li>
+                    <a href="" class="footer-link">Valores</a>
+                </li>
+                <li>
+                    <a href="" class="footer-link">Blog</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Suporte</h3>
+                </li>
+                <li>
+                    <a href="" class="footer-link">FAQ's</a>
+                </li>
+                <li>
+                    <a href="" class="footer-link">Ajuda</a>
+                </li>
+                <li>
+                    <a href="" class="footer-link">Nos Contate</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Legal</h3>
+                </li>
+                <li>
+                    <a href="" class="footer-link">Politca Gov</a>
+                </li>
+                <li>
+                    <a href="" class="footer-link">Ajuda</a>
+                </li>
+                <li>
+                    <a href="" class="footer-link">Documentos</a>
+                </li>
+            </ul>                
+               
+        </div>
+
+        <div id="linha-contato"></div>
+        <div id="footer_copyright">
+            <p>@2024 Clínica. Todos os direitos reservados.</p>
+            <div id="direita">
+                <p>Termos & Acordos</p>
+                <p>Política de Privacidade</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>

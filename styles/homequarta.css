@@ -1,0 +1,14 @@
+#banner-quarta img{
+    height: 180%;
+    width: 46%;
+    position: absolute;
+    right: 0;
+    border-radius: 10% 0 0 10%;
+}
+
+@media screen and (max-width: 1170px){
+    #banner-quarta img{
+        display: none;
+    }
+
+}

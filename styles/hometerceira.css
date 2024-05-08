@@ -1,0 +1,132 @@
+#cta-terceira{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 150px;
+}
+
+#cta-terceira .title{
+    font-size: 4rem;
+    width: 700px;
+    line-height: 80px;
+}
+
+#cta-terceira .description{
+    width: 350px;
+    font-size: 1.2rem;
+    gap: 24px;
+    line-height: 30px;
+    font-family: poppinslight;
+}
+
+/*.shape-terceira{
+    background-color: #F0C9C9;
+    width: 575px;
+    height: 36px;
+    position: absolute;
+    border-radius: 12px;
+    bottom: 640px;
+    left: 118px;
+    z-index: 1;
+}*/
+
+#banner-terceira{
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 70%;
+}
+
+#banner-terceira img{
+    height: 800px;
+    width: 750px;
+    right: 0;
+    position: absolute;
+    border-radius: 10% 0 0 10%;
+}
+
+
+.select-menu .dropdown {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F0C9C9;
+    width: 400px;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+
+
+.dropdown i{
+    font-size: 25px;
+    transition: 0.2s;
+}
+
+
+
+.select-menu .options{
+    position: relative;
+    padding: 20px;
+    background: #F0C9C9 ;
+    color: white;
+    border-radius: 8px;
+    margin-top: 10px;
+    width: 400px;
+    list-style-type: none;
+    padding: 15px;
+    display: none;
+}
+
+
+.select-menu.active .dropdown i{
+    transform: rotate(-180deg);
+}
+
+
+
+.select-menu.active .options{
+    display: block;
+}
+
+
+
+.options .option{
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 15px;
+    border-radius: 8px;
+    align-items: center;
+
+}
+
+
+
+.options .option:hover{
+    background: #EE6E6E;
+}
+
+@media screen and (max-width: 1170px){
+    #banner-terceira img{
+        display: none;
+    }
+
+    #cta-terceira{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+
+    #cta-terceira .title{
+        text-align: center;
+        align-items: center;
+    }
+
+
+}
